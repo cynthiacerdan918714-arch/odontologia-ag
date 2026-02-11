@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Odontología AG</title>
+  <meta name="description" content="Odontología AG ofrece atención odontológica integral, tratamientos modernos y cuidado profesional para tu sonrisa." />
+  <style>
+    :root {
+      --azul-principal: #1f6fa9;
+      --azul-suave: #eaf4fb;
+      --azul-acento: #6bb6e8;
+      --texto-principal: #1f3b53;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      background-color: #f8fbfe;
+      color: var(--texto-principal);
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1f6fa9, #6bb6e8);
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 130px;
+      margin-bottom: 15px;
+    }
+
+    header h1 {
+      margin: 10px 0 5px;
+      font-size: 2.4rem;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: white;
+      padding: 12px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      z-index: 10;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: var(--azul-principal);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover { color: var(--azul-acento); }
+
+    section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 {
+      color: var(--azul-principal);
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .servicios ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .servicios li {
+      background: white;
+      padding: 20px;
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+      border-top: 4px solid var(--azul-acento);
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .galeria img {
+      width: 100%;
+      border-radius: 18px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      transition: transform 0.4s ease;
+    }
+
+    .galeria img:hover { transform: scale(1.04); }
+
+    form {
+      background: white;
+      padding: 35px;
+      border-radius: 18px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      max-width: 520px;
+      margin: auto;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 18px;
+      border: 1px solid #cfe3f2;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    form button {
+      background-color: var(--azul-principal);
+      color: white;
+      border: none;
+      padding: 14px;
+      width: 100%;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+
+    form button:hover { background-color: #155a89; }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 16px 18px;
+      border-radius: 50%;
+      font-size: 22px;
+      text-decoration: none;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+    }
+
+    footer {
+      background-color: #1f6fa9;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo-ag.png" alt="Logo Odontología AG">
+  <h1>Odontología AG</h1>
+  <p>Cuidamos tu sonrisa con profesionalismo y calidez</p>
+  <p><strong>Atendido por la Dra. Adis Gutiérrez · MN 38889</strong></p>
+</header>
+
+<nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#servicios">Tratamientos</a>
+  <a href="#galeria">Galería</a>
+  <a href="#turnos">Turnos</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="inicio">
+  <h2>Bienvenidos</h2>
+  <p>En <strong>Odontología AG</strong> devolvemos la salud bucal integral, combinando tecnología, experiencia y una atención personalizada para cada paciente.</p>
+</section>
+
+<section id="servicios" class="servicios">
+  <h2>Tratamientos</h2>
+  <ul>
+    <li>Limpieza dental con ultrasonido</li>
+    <li>Eliminación de caries</li>
+    <li>Placas para bruxismo</li>
+    <li>Tratamiento de conducto</li>
+    <li>Coronas, pernos e incrustaciones</li>
+    <li>Prótesis fija o removible</li>
+    <li>Ortodoncia y ortopedia</li>
+    <li>Implantes dentales</li>
+  </ul>
+</section>
+
+<section id="galeria">
+  <h2>Galería del Consultorio</h2>
+  <div class="galeria">
+    <img src="dientes.jpg" alt="Consultorio odontológico">
+    <img src="paciente.jpg" alt="Equipo odontológico">
+    <img src="Consultorio.jpg" alt="Atención odontológica">
+  </div>
+</section>
+
+<section id="turnos">
+  <h2>Solicitar Turno</h2>
+  <form id="turnos-whatsapp">
+    <input type="text" id="nombre" placeholder="Nombre y apellido" required>
+    <input type="tel" id="telefono" placeholder="Teléfono de contacto" required>
+    <textarea id="consulta" rows="4" placeholder="Escriba su consulta" required></textarea>
+    <button type="submit">Enviar consulta por WhatsApp</button>
+  </form>
+  <p style="text-align:center; margin-top:15px;">Recibirás una respuesta automática confirmando tu solicitud.</p>
+</section>
+
+<section id="contacto">
+  <h2>Contacto</h2>
+  <p><strong>Teléfono:</strong> +54 9 1126793203</p>
+  <p><strong>Email:</strong> odontologiaag08@gmail.com</p>
+  <p><strong>Direccion:</strong>Hipolito Yrigoyen 2361 Balvanera CABA</p>
+  <p>
+    <a href="https://www.instagram.com/odontologiaag08" target="_blank">Instagram</a> ·
+    <a href="https://www.facebook.com/OdontologiaAG" target="_blank">Facebook</a>
+  </p>
+  <iframe src="https://www.google.com/maps?q=Hipolito%20Yrigoyen%202361%20Balvanera%20CABA&output=embed" width="100%" height="300" style="border:0; border-radius:16px" loading="lazy"></iframe>
+</section>
+
+<footer>
+  <p>© 2026 Odontología AG · Todos los derechos reservados</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/5491126793203" target="_blank">💬</a>
+
+<script>
+  const sections = document.querySelectorAll('section');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.15 });
+
+  sections.forEach(section => observer.observe(section));
+</script>
+
+<script>
+  const form = document.getElementById('turnos-whatsapp');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const nombre = document.getElementById('nombre').value;
+    const telefono = document.getElementById('telefono').value;
+    const consulta = document.getElementById('consulta').value;
+
+    const mensaje = `Hola, soy ${nombre}. Mi teléfono es ${telefono}. Quisiera consultar: ${consulta}.`;
+    const url = `https://wa.me/5491126793203?text=${encodeURIComponent(mensaje)}`;
+
+    window.open(url, '_blank');
+  });
+</script>
+</body>
+</html>
